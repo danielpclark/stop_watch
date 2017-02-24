@@ -54,6 +54,9 @@ watch.h # human total time
 
 watch.ha # human average
 # => "18.54 second average"
+
+watch.times
+# => [44.973787791, 6.39862104, 4.238468485]
 ```
 
 ## Development
