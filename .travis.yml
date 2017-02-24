@@ -8,7 +8,7 @@ env:
   - secure: qXpWydxv6DHMrvGL8WH4wNRY4MTY7KV/x308Y5dHkZCrI7k9UOccvznp69KT3Z+tzYEFDXfUix5wA6pgyVcvrsQyiLSjGcyzHhxJKs1gk0gcxAkmhwHmUP9aiXWUe/mzpj7Uoc2DHwpPTpK1wQ5kV6eV+jzQLuN3nhfNr2sL8b4=
 addons:
   code_climate:
-    repo_token: TODO! UPDATE_THIS!
+    repo_token: 1783800b27684868b9e75c23f8d98913b74d26c4b92d7efca86d3b09c5f85bc8
 script: bundle exec rake test
 after_success:
   - bundle exec codeclimate-test-reporter
