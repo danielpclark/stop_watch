@@ -6,7 +6,7 @@
 
 # StopWatch
 
-A stop watch timer where you hit `mark` to start the timer and continue to hit `mark` to mark times.
+A stopwatch timer where you hit `mark` to start the timer and continue to hit `mark` to mark times.
 
 ## Installation
 
