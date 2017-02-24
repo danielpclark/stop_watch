@@ -1,15 +1,12 @@
 [![Gem Version](https://badge.fury.io/rb/stop_watch.svg)](http://badge.fury.io/rb/stop_watch)
 [![Code Climate](https://codeclimate.com/github/danielpclark/stop_watch/badges/gpa.svg)](https://codeclimate.com/github/danielpclark/stop_watch)
 [![Build Status](https://travis-ci.org/danielpclark/stop_watch.svg)](https://travis-ci.org/danielpclark/stop_watch)
-[![Test Coverage](https://codeclimate.com/github/danielpclark/stop_watch/badges/coverage.svg)](https://codeclimate.com/github/danielpclark/stop_watch)
 [![Inline docs](http://inch-ci.org/github/danielpclark/stop_watch.svg?branch=master)](http://inch-ci.org/github/danielpclark/stop_watch)
 [![SayThanks.io](https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg)](https://saythanks.io/to/danielpclark)
 
 # StopWatch
 
-Quick and dirty copy and paste gem from language_cards source to have a stop watch timer available as a gem.
-
-Lots of TODOs for this gem, they're not even written yet ;-)
+A stop watch timer where you hit `mark` to start the timer and continue to hit `mark` to mark times.
 
 ## Installation
 
@@ -29,7 +26,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'stop_watch'
+
+watch = StopWatch::Timer.new
+
+watch.mark
+# => 2017-02-24 18:03:43 -0500
+
+watch.time?
+# => false
+
+watch.mark
+# => [44.973787791]
+
+watch.time?
+# => true
+
+watch.mark
+# => [44.973787791, 6.39862104]
+
+watch.mark
+# => [44.973787791, 6.39862104, 4.238468485]
+
+watch.h # human total time
+# => "00:00:55"
+
+watch.ha # human average
+# => "18.54 second average"
+```
 
 ## Development
 
