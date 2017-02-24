@@ -1,6 +1,14 @@
 require "stop_watch/version"
 
+##
+# StopWatch
+#
+# Project namespace for StopWatch.
 module StopWatch
+  ##
+  # Timer
+  #
+  # Object that behaves as a stop watch timer.
   class Timer
     def initialize
       @stamps = []
@@ -32,6 +40,9 @@ module StopWatch
       "%02d:%02d:%02d" % [total/3600%24, total/60%60, total%60]
     end
 
+    # Average of times.  If `time?` if false this will raise an error.
+    #
+    # @return [Float,Error]
     def average
       total.fdiv(times.size)
     end
