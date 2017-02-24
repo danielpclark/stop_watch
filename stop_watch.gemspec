@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Daniel P. Clark"]
   spec.email         = ["6ftdan@gmail.com"]
 
-  spec.summary       = %q{Stop watch timer for Ruby}
-  spec.description   = %q{Stop watch timer for Ruby.}
+  spec.summary       = 'Stop watch timer for Ruby'
+  spec.description   = 'Stop watch timer for Ruby.'
   spec.homepage      = "https://github.com/danielpclark/stop_watch"
   spec.license       = "MIT"
 

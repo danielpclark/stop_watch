@@ -30,7 +30,6 @@ class StopWatchTest < Minitest::Test
     assert @t.times.all? { |t| t > 0 }
   end
 
-
   def test_times_are_floats
     assert @t.times.all? { |t| t.is_a? Float }
   end

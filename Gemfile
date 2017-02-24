@@ -12,4 +12,3 @@ group :test do
   gem 'minitest-reporters', '~> 1.1'
   gem 'color_pound_spec_reporter', '~> 0.0.6'
 end
-

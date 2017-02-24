@@ -28,7 +28,11 @@ module StopWatch
     end
 
     def ha # human average
-      "%0.2f second average" % average rescue ""
+
+      "%0.2f second average" % average
+    rescue
+      ""
+
     end
 
     def times

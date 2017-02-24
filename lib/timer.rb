@@ -27,7 +27,11 @@ module LanguageCards
     end
 
     def ha # human average
-      "%0.2f #{I18n.t('Timer.AverageSeconds')}" % average rescue ""
+
+      "%0.2f #{I18n.t('Timer.AverageSeconds')}" % average
+    rescue
+      ""
+
     end
 
     def times
