@@ -20,9 +20,9 @@ module StopWatch
     # @return [Time, Array<Float>] First time returns Time start. From then on it returns `times` method result. @see #times
     def mark
       if @mark
-        times << -(@mark - (@mark = Time.now))
+        times << -(@mark - (@mark = Process.clock_gettime(Process::CLOCK_MONOTONIC)))
       else
-        @mark = Time.now
+        @mark = Process.clock_gettime(Process::CLOCK_MONOTONIC)
       end
     end
 
